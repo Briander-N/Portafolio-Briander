@@ -1,0 +1,77 @@
+.objective{
+    padding: 6rem 2rem;
+    text-align: center;
+
+    background: #18181b;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05),
+        inset 0 -1px 0 rgba(255,255,255,.05);
+}
+.objective__title{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #60fa68;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.objective__cards{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    gap: 2rem;
+}
+
+.objective__card{
+    position: relative;
+
+    background: #111827;
+
+    padding: 3rem 2rem;
+
+    border-radius: 20px;
+
+    border-top: 5px solid #60fa68;
+
+    transition: .3s ease;
+}
+
+.objective__card:hover{
+    transform: translateY(-10px);
+}
+
+.objective__number{
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    font-size: 4rem;
+    font-weight: 900;
+
+    color: rgba(255,255,255,.05);
+}
+
+.objective__card h3{
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.objective__card p{
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+@media (min-width: 768px){
+
+    .objective__cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .objective__title{
+        font-size: 4rem;
+    }
+}

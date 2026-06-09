@@ -1,0 +1,133 @@
+
+.about{
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 3rem;
+
+    background: #18181b;
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.05);
+}
+.about{
+    background-color: #18181b !important;
+}
+
+.about__content{
+    padding: 1rem;
+}
+
+.about__title{
+    color: #72fa60;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about__title::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin-top: .75rem;
+    border-radius: 999px;
+    background: #60fa68;
+}
+
+.about__paragraph{
+    color: #d4d4d8;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background: #25eb25;
+    color: white;
+    padding: .9rem 1.8rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.about .btn:hover{
+    background: #3bf664;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 235, 37, 0.4);
+}
+
+.about__figure{
+    display: none;
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px){
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about__figure{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .about__picture{
+        width: 100%;
+        max-width: 400px;
+        filter: drop-shadow(0 15px 30px rgba(0,0,0,.6));
+    }
+
+    .about__title::after{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Computadoras */
+@media (min-width: 1024px){
+
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 450px;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .about__figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .about__picture{
+        width: 100%;
+        max-width: 480px;
+        filter: drop-shadow(0 15px 30px rgba(0,0,0,.6));
+        transition: .4s ease;
+    }
+
+    .about__picture:hover{
+        transform: scale(1.05) translateY(-10px);
+    }
+
+    .about__title{
+        font-size: 3rem;
+    }
+
+    .about__paragraph{
+        font-size: 1.15rem;
+    }
+}
