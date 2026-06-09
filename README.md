@@ -1,1 +1,1 @@
-![image](https://github.com/user-attachments/assets/bbfb654b-d83e-4d94-8797-4d32378225df)
+<img width="1600" height="3659" alt="screencapture-briander-verdezoto-netlify-app-2026-06-09-18_16_52" src="https://github.com/user-attachments/assets/edf96277-8fd1-4d42-8ed2-8c00c2e3ebef" />
